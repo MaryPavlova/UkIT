@@ -1,6 +1,13 @@
-$(document).ready(function(){
+function bindHamburger() {
+	$('.humburger').click(function() {
+		
+		$('.humburger').toggleClass('active');
+		$('.header ul').toggleClass('active');
+	});
+}
 
-			
+function initializeSlider(){
+
 			$('.slider').slick({
   
   infinite: true,
@@ -21,12 +28,15 @@ $(document).ready(function(){
 }
   				]
 });
-			});
+}
+
+
+$(document).ready(function() {
+	bindHamburger();
+	initializeSlider();
+});
+
 
 
 					
 					 			
-
-
-
-
