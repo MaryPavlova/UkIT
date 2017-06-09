@@ -1,0 +1,545 @@
+___________________GLOBAL________________________________________*/
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+html {
+	font-size: 62.5%;
+
+}
+body {
+	background: white;
+	font: 1.6rem/2.3rem 'Lato', sans-serif;
+	color: #565656;
+	margin: auto;
+}
+img {
+    width:100%;
+    max-width:100%;
+    display:block;
+}
+
+/*________________________HEADER_______________________________________*/
+
+
+.header .headContanier{
+	display:flex;
+	flex-flow:  wrap;
+	align-items: center;
+
+	}
+
+/*____NAV & LOGO____*/
+
+
+.headContanier .logo { width: 95px;
+	height: 40px;
+	margin: 35px 0 35px 150px;
+
+}
+
+
+	.headContanier .logo img {	height: 38px;
+		width: 97px;}
+
+.headContanier .menu { 
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+
+
+.headContanier .humburger {
+	position: absolute;
+	top: 40px;
+	left:20px;
+	width:32px;
+	display:block;
+	border-top:4px solid #000;
+}
+
+	.headContanier .humburger::before {
+	content: '';
+	border-top: 4px solid #000;
+	height: 6px;
+	margin: 6px 0 6px 0;
+	border-bottom:4px solid #000;
+	display: block;
+
+}
+.headContanier .nav  a {text-decoration: none;
+			color: #c4c5c5;
+			text-transform:  uppercase; 
+			padding: 1rem 2rem;
+			font: 900 1.3rem/6.5rem 'Lato', sans-serif; }
+
+.headContanier  .nav { position: fixed;
+			top: 0px;
+			right:calc(-1 * (100% - 32px - 10vw));
+			 width: calc(100% - 32px - 10vw);
+			transition: right 1.2s; 
+			background: white;}
+
+
+.headContanier .nav.active {
+	right:0;
+}
+
+.headContanier .nav li {border: 1px solid #c4c5c5;
+border-collapse: collapse;
+}
+
+.headContanier .nav li:first-child a {
+color: #1abb9c;}
+
+.headContanier .nav li a:hover {color: #1abb9c;}
+
+
+/*______PREVIEW___________*/
+
+
+
+.greedContainer .preview {background: gray;
+padding:124px 0;
+}
+
+
+
+.preview h1 {font:900 3.9rem/6.5rem 'Lato', sans-serif;
+			text-align: center;
+			border:1px solid #646464;
+			background: #646464;
+			margin: 0 20px 10px 20px;
+			color: white; 
+			text-transform:  uppercase;}
+
+
+
+.preview h2 { font:300 2.5rem/4.5rem 'Lato', sans-serif;
+			text-align: center;
+			border:1px solid #646464;
+			background: #646464;
+			margin: 0  30px 25px;
+			color: white;
+			text-transform:  uppercase; } 
+
+
+
+
+
+.preview .social {display: flex;
+	flex-flow:  wrap;
+	justify-content: center;
+
+}
+
+.preview .social li  {margin: 0 5px ;}
+
+/*_____________________MAIN_____________________*/
+
+
+
+main .line {padding:5px; 
+			background: #1abc9c;
+			margin: 0 0 75px 0;}
+
+main .line:after {content: '';
+	width: 0;
+	height: 0;
+		border: 10px solid transparent;
+	border-top: 10px solid #1abc9c;
+    position: absolute;
+    left: 8%;
+
+}
+
+.line h3 { font: 900 1.5rem/2.5rem 'Lato', sans-serif;
+	color: white;
+	border:1px solid #1abc9c;	
+	text-transform:  uppercase;
+	margin: 0 20px;
+}
+
+/*______________FIRST SeCTION__ABOUT ME____________________*/
+
+.AboutMe .about {color: #484848;
+font: 300 2.2rem/3.5rem 'Lato', sans-serif;
+margin: 40px 15px 50px;}
+
+.AboutMe p {font:400 1.5rem/3.3rem 'Lato', sans-serif;
+			margin: 0 15px 60px 0;}
+
+.whatI h4 {font:900 1.6rem/6.5rem 'Lato', sans-serif;
+		text-transform:  uppercase;
+		color: #484848;
+		margin: 0 15px;
+		 
+}
+.AboutMe .b img	{width: 140px;
+height: 45px;
+margin: 0 auto 80px;}	
+
+
+
+/*______________SECOND SeCTION__PORTFOLIO____________________*/
+
+
+
+.Container .portfolio {background: #333333;
+							color: white;}
+
+
+.portfolio .greed h4 {font:900 1.6rem/6.5rem 'Lato', sans-serif;
+						text-transform: uppercase;
+						margin: 0 15px;}
+
+.portfolio .greed p {font:400 1.5rem/3.3rem 'Lato', sans-serif;
+						margin: 0 15px 15px;}
+
+
+/*_______________SLIDER________________*/
+
+.slider .item {margin: 0 15px 75px;}
+
+
+
+
+.portfolio .slider  .slick-arrow{ text-indent: -9999px;
+display: none!important;
+}
+
+ /*.slider .slick-dots { display: flex;
+ 						justify-content: center;
+ 						
+ 						}
+
+
+ .slider .slick-dots button {text-indent: -9999px;
+ 							border-radius: 50%; 
+ 							margin: 10px;
+ 							padding: 0;
+ 							width: 20px;
+ 							height: 20px;
+ 							background:  #1abc9c;
+ 							outline: none;}
+
+
+.slider .slick-dots .slick-active button {background: white;}*/
+
+
+/*______________3 SeCTION__BLOG____________________*/
+main .blog {background: #f0f0f0;}
+
+.blog .flexBlog {padding: 0 0 25px;}
+
+.blog .block {background: #ffffff;
+margin:  0  15px 25px;
+border-bottom: 5px solid #e4e4e4; 
+}
+
+
+
+ .block .desc {font:900 1.3rem/1.5rem 'Lato', sans-serif;
+					color: #9f9f9f;
+					text-transform: uppercase;
+					justify-content: space-between;
+					margin: 0  0 20px 0;
+					padding:25px 8px;
+					display: flex;
+					background: #f9f9f9;
+				
+				}
+
+
+
+.block .desc img {width:  auto;
+					display: inline-block;
+					margin: 0 0 0 5PX;
+}
+
+.blog .block h4 {font: 900 1.5rem/3rem 'Lato', sans-serif;
+					text-transform: uppercase;
+					color: #5c5c5c;
+					margin: 0 15px;}
+
+.blog .block p {font: 400 1.5rem/3.3rem 'Lato', sans-serif;
+				color: #656565;
+				margin: 0 15px 25px;}
+
+
+/*______________4 feedback____________________*/
+
+.feedback {background: url("../img/back.jpg") no-repeat;
+background-size: cover;  ;
+}
+
+.greedGet .column, .greedGet .contact  {padding: 15px;
+    text-align: center;
+}
+.column .form {overflow: hidden;}
+
+.form .styleForm {background: rgba(255,255,255, 0.2);
+width: 100%;
+border:none;
+font: 900 1.2rem/6.9rem 'Lato', sans-serif;
+text-transform: uppercase;
+color: #a1a1a1;
+margin: 0 0 20px;
+padding: 0 0 0 15px;
+height: 50px;
+}
+
+.feedback  .form textarea {resize: none;
+height: 215px;}
+
+
+
+.feedback .greedGet img {width: auto;}
+
+.form .submit {background: #3f8dbf url("../img/submit.png") no-repeat 25px;
+font: 400 1.4rem/3.5rem 'Lato', sans-serif;
+border:none;
+border-radius: 3px;
+text-transform: uppercase;
+color: white;
+width: 135px;
+padding: 1px 0 0 25px;
+margin: 0 0 70px 0; }
+
+
+.greedGet .contact h4 {font: 900 1.6rem/6.9rem 'Lato', sans-serif;
+ text-transform: uppercase;
+color: white;}
+
+.greedGet .contact p {font: 400 1.5rem/3.3rem 'Lato', sans-serif;
+color:#d9d9d9;
+margin: 0 0 25px 0; }
+
+.contact .info p  {margin: 0;}
+
+.greedGet .contact img{display: inline;
+margin: 0 15px 0 0;}
+
+
+
+
+/*______________________FOOTER_____________*/
+
+footer .footer {padding: 40px 15px;
+font: 400 1.5rem/3.3rem 'Lato', sans-serif;
+color: #656565;
+text-align: center;}
+
+footer .footer p {margin: 0 0 35px 0;}
+
+.footer .social {display: flex;
+				flex-flow: wrap;
+				justify-content: center;}
+
+footer .footer img {width: auto;
+					margin: 10px;}
+
+
+
+
+
+
+
+/*_______________Tab_________*/
+
+@media screen and (min-width: 768px)  {
+
+/*________TAB________HEADER_____________________*/
+		.headContanier .logo {     
+			margin: 25px 65px 25px 25px;}
+
+
+		.headContanier .humburger {
+		display: none;
+}
+		.header .headContainer {
+		max-width:768px;
+		overflow: hidden;
+		flex-flow: column;
+}
+
+.headContanier  .nav {display: flex;
+position: static;
+}
+
+.headContanier .nav li {border:none;
+text-align: center;
+padding: 0;}
+
+.headContanier .nav li:last-child a {margin: 0;}
+
+
+
+.preview h1 {margin: 0 194px 15px;}
+
+.preview h2 {margin: 0 210px 25px;}
+
+/*______TAB_____MAIN_____________*/
+
+
+/*_________TAB_____FIRST SeCTION__ABOUT ME____________________*/
+.AboutMe .eleps img {width:auto;
+	margin: 0 auto;
+}
+
+.AboutMe .whatI {display: flex;
+				flex-flow: row wrap;
+				width: calc(( 100% - 15px) / 2 );
+				justify-content: space-between;}
+
+
+
+.AboutMe .flex {display: flex;
+				flex-flow: row wrap;
+				}
+
+
+
+
+/*_________TAB_____SECOND SeCTION__PORTFOLIO____________________*/
+
+.portfolio .slider img {width: auto;
+						margin: auto;}
+
+/*______ТАВ________3 SeCTION__BLOG____________________*/
+
+.blog .block {
+margin:  0  25px 25px;
+
+}
+
+}
+
+
+
+
+/*_________________LAPTOP_______________*/
+
+@media screen and (min-width: 1140px) {
+
+	/*_____LAP____HEADER________________*/
+
+	.header .headContanier {
+		max-width:1170px;
+        padding:0;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;}
+
+
+	.headContanier .logo {    width: 30%;
+								margin: 37px 0;
+
+	}
+	
+
+	.headContanier .menu  ul {display: flex;
+					flex-flow: row ;
+					justify-content: space-between;}
+
+	.headContanier  .nav {margin: 25px 0;}
+
+
+	.greedContainer  {background: gray;
+
+    }
+    .greedContainer .preview  {max-width: 1140px;
+    							margin: auto ;}
+
+	.preview h1 {margin: 0 190px 15px;
+		font:900 8rem/6.5rem 'Lato', sans-serif;
+		padding: 13px;}
+
+	.preview h2 {margin: 0 210px 25px;
+		font:300 5rem/6.5rem 'Lato', sans-serif;
+	}
+
+	/*_____LAP____MAIN_________________*/
+
+	.Container {
+		
+		margin:  auto;
+				}
+
+
+	.line h3 {
+    		margin: auto ;
+    		max-width: 1170px;
+    		 font: 900 2.5rem/6.5rem 'Lato', sans-serif;}
+
+    main .line:after {left: 25%;}
+
+
+/*_________LAP_____FIRST SeCTION__ABOUT ME____________________*/
+
+	main .AboutMe {
+		max-width: 1170px; 
+		margin: 0 auto; 
+		display: flex;
+		flex-flow: row wrap;}
+    			
+ 
+ 	.AboutMe .eleps img {margin: 0 60px 50px 0;
+ 						flex: 1; 
+ }
+
+
+ 	.AboutMe .info { flex: 2; 
+ }
+
+	 .AboutMe .whatI {flex:1 30%;
+				}
+
+ 	.AboutMe .b	{align-items: center;
+ 				margin: auto;
+ 				margin-bottom:  80px;
+ 				border-radius: 1px;}	
+.whatI h4 {margin: 0;}
+
+
+/*______________SECOND SeCTION__PORTFOLIO____________________*/
+
+.portfolio .greed 
+{max-width: 1170px; 
+margin: auto;}
+
+.portfolio .greed  p {margin: 0 15px 60px;}
+
+/*______lap________3 SeCTION__BLOG____________________*/
+
+.blog .flexBlog {max-width: 1170px;
+				margin: auto;
+				display: flex;
+				flex-flow: row wrap;
+
+}
+
+
+
+.flexBlog .block {flex: 1 30%;
+					
+					}
+
+
+ 
+/*______lap________4 SeCTION__FEEDBACK____________________*/
+
+.feedback .greedGet {max-width: 1170px;
+	margin: auto;
+	display: flex;
+					}
+
+.feedback .column {flex: 2;
+					text-align: left;}
+
+.feedback .contact {flex: 1;
+					text-align: left; }
+
+	}
